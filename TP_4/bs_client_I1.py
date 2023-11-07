@@ -13,7 +13,7 @@ s.connect((host, port))
 # note : la double parenthèse n'est pas une erreur : on envoie un tuple à la fonction connect()
 
 # Envoi de data bidon
-s.sendall(b'Meooooo !')
+s.sendall('Meooooo !')
 
 # On reçoit 1024 bytes qui contiennent peut-être une réponse du serveur
 data = s.recv(1024)
